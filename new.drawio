@@ -1,9 +1,79 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36" version="24.7.10">
   <diagram name="Page-1" id="kkCfuqFlFoP3AIR4GzD-">
-    <mxGraphModel>
+    <mxGraphModel dx="1034" dy="412" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="-NzBnUYoiPqk0FTnwwOD-1" value="AWS Lambda" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#ffffff;fillColor=#232F3E;dashed=0;verticalLabelPosition=middle;verticalAlign=bottom;align=center;html=1;whiteSpace=wrap;fontSize=10;fontStyle=1;spacing=3;shape=mxgraph.aws4.productIcon;prIcon=mxgraph.aws4.lambda;" vertex="1" parent="1">
+          <mxGeometry x="490" y="135" width="40" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="-NzBnUYoiPqk0FTnwwOD-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;elbow=vertical;" edge="1" parent="1" source="-NzBnUYoiPqk0FTnwwOD-2" target="-NzBnUYoiPqk0FTnwwOD-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="179" y="60" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="179" y="70" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-NzBnUYoiPqk0FTnwwOD-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;exitPerimeter=0;elbow=vertical;" edge="1" parent="1" source="-NzBnUYoiPqk0FTnwwOD-2" target="-NzBnUYoiPqk0FTnwwOD-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="140" y="130" />
+              <mxPoint x="140" y="260" />
+              <mxPoint x="510" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-NzBnUYoiPqk0FTnwwOD-2" value="" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;fillColor=#7AA116;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.s3;" vertex="1" parent="1">
+          <mxGeometry x="160" y="120" width="38" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="-NzBnUYoiPqk0FTnwwOD-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="-NzBnUYoiPqk0FTnwwOD-3" target="-NzBnUYoiPqk0FTnwwOD-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-NzBnUYoiPqk0FTnwwOD-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="-NzBnUYoiPqk0FTnwwOD-3" target="-NzBnUYoiPqk0FTnwwOD-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="500" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-NzBnUYoiPqk0FTnwwOD-3" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#DD344C;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.identity_access_management_iam_roles_anywhere;" vertex="1" parent="1">
+          <mxGeometry x="320" y="150" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="-NzBnUYoiPqk0FTnwwOD-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="-NzBnUYoiPqk0FTnwwOD-4" target="-NzBnUYoiPqk0FTnwwOD-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="510" y="75" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-NzBnUYoiPqk0FTnwwOD-4" value="Amazon Polly" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#ffffff;fillColor=#232F3E;dashed=0;verticalLabelPosition=middle;verticalAlign=bottom;align=center;html=1;whiteSpace=wrap;fontSize=10;fontStyle=1;spacing=3;shape=mxgraph.aws4.productIcon;prIcon=mxgraph.aws4.polly;" vertex="1" parent="1">
+          <mxGeometry x="320" y="40" width="40" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="-NzBnUYoiPqk0FTnwwOD-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="210" as="targetPoint" />
+            <mxPoint x="370" y="210" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-NzBnUYoiPqk0FTnwwOD-5" value="IAM role&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="310" y="190" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-NzBnUYoiPqk0FTnwwOD-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="329.9981818181818" y="170" as="sourcePoint" />
+            <mxPoint x="178.99" y="158" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="330" y="171" />
+              <mxPoint x="180" y="171" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-NzBnUYoiPqk0FTnwwOD-30" value="python script with json code&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;rotation=0;" vertex="1" parent="1">
+          <mxGeometry x="345" y="270" width="160" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="-NzBnUYoiPqk0FTnwwOD-34" value="connect aws lambda to polly&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="340" y="148" width="150" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="-NzBnUYoiPqk0FTnwwOD-36" value="full access to polly" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="210" y="143" width="110" height="15" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
