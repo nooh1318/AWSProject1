@@ -1,0 +1,44 @@
+Python Script to interact with polly to produce desire output
+/code/
+import json
+import base64
+import boto3
+
+def lambda_handler(event, context):
+    # Extract the text from the event, defaulting to "Hello, World!" if not provided
+    text = event.get('text', 'Hello, World!')
+    
+    # Initialize the Polly client
+    polly_client = boto3.client('polly')
+    
+    try:
+        # Synthesize speech using Amazon Polly
+        response = polly_client.synthesize_speech(
+            Text=text,
+            OutputFormat='mp3',
+            VoiceId='Joanna'
+        )
+        
+        # Read the audio stream from the response
+        audio_stream = response['AudioStream'].read()
+
+        # Encode the audio stream to base64 to make it JSON serializable
+        encoded_audio = base64.b64encode(audio_stream).decode('utf-8')
+
+        # Return the base64 encoded audio in the response
+        return {
+            'statusCode': 200,
+            'isBase64Encoded': True,  # Indicate that the body is base64 encoded
+            'headers': {
+                'Content-Type': 'audio/mpeg',
+                'Content-Disposition': 'attachment; filename="output.mp3"'
+            },
+            'body': encoded_audio
+        }
+        
+    except Exception as e:
+        # Return an error message if something goes wrong
+        return {
+            'statusCode': 500,
+            'body': json.dumps({'error': str(e)})
+        }
